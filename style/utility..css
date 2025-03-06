@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.flow-cols {
+    grid-template-columns: 1fr;
+}
+
+.gap-16 {
+    gap:1rem;
+}
+
+.gap-12 {
+    gap:.75rem ;
+}
