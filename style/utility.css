@@ -1,0 +1,32 @@
+.container {
+    border: 1px solid red;
+    width: 90%; 
+    margin: auto ;  
+    justify-content: center; 
+    justify-items: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    
+}
+
+.grid {
+    display: grid;
+}
+
+.flow-cols {
+    grid-template-columns: 1fr;
+}
+
+.gap-16 {
+    gap:1rem;
+}
+
+.gap-12 {
+    gap:.75rem ;
+}
+
+.align-center {
+    align-items: center;
+}
