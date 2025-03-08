@@ -1,0 +1,5 @@
+main {
+    input:nth-child(1){
+        border: 1px solid red;
+    }
+}

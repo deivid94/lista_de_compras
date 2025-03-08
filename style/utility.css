@@ -1,10 +1,8 @@
 .container {
-    border: 1px solid red;
     width: 90%; 
     margin: auto ;  
-    justify-content: center; 
     justify-items: center;
-    align-items: center;
+
 }
 .flex {
     display: flex;
@@ -29,4 +27,10 @@
 
 .align-center {
     align-items: center;
+}
+
+.border-input {
+    border: 2px solid var(--content-tertiary);
+    opacity: .5;
+    
 }

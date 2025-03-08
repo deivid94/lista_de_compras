@@ -1,0 +1,19 @@
+.label { 
+    height: 57px;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white);
+    gap: 10rem;
+    padding: 0.75rem;
+    font-weight: var(--fw-md);
+    color: var(--content-secondary);
+ 
+}
+
+input[type=checkbox] {
+    border-radius: 1px;
+    gap: 12px;
+}

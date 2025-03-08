@@ -93,6 +93,13 @@ button {
     font-family: inherit;
 }
 
+input {
+    border: none;
+}
+input::before{
+    border: none;
+}
+
 .title {
     font-family: 'Sora', 'system-ui', sans-serif;
     font-weight: var(--fw-bold);

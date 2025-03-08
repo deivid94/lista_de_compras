@@ -17,7 +17,6 @@
 <body>
     <div class="container">
 
-   
     <header class="flex gap-16 align-center" >
             <div class="">
                 <img class="logo" src="/assets/logo.png" alt="logo">
@@ -36,16 +35,24 @@
 
     <main>
         <form action="">
-            <input type="text" placeholder="Adicione um novo item">
-            <button type="submit">Adicionar item</button>
-                
-                
-        
+            <div>
+                <input class="label border-input" type="text" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar item</button>
+            </div>
+       
 
-        <div>
-            <span>item removido</span>
-        </div>
-
+            <div id="content" class="label">
+                <div>
+                    <input type="checkbox">
+                    <span>Pao de forma</span>
+                </div>
+               
+                <div>
+                    <a href=""><i>Botao excluir</i></a>
+                </div>
+                
+            </div>
+            
     </form>
 
     </main>
