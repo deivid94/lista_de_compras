@@ -1,5 +1,5 @@
 .label { 
-    height: 57px;
+
     border-radius: .75rem;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,10 @@
     font-weight: var(--fw-md);
     color: var(--content-secondary);
  
+}
+
+.label::placeholder{
+    align-items: center;
 }
 
 input[type=checkbox] {

@@ -9,6 +9,10 @@
     
 }
 
+.flex-colum {
+    flex-direction: column;
+}
+
 .grid {
     display: grid;
 }

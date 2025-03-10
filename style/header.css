@@ -2,4 +2,8 @@ header {
     .logo{
         object-fit: contain;
     }
+
+    .title{
+        font-family: 'Sora', 'system-ui', sans-serif;
+    }
 }
