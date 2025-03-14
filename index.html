@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
- <title>Lista de compras</title>
-</head>
-<body>
+    <title>Lista de compras</title>
+  </head>
+
+  <body>
     <div class="container">
-
-    <header class="flex gap-16 align-center" >
-            <div class="">
-                <img class="logo" src="/assets/logo.png" alt="logo">
-            </div>
-          <div>
-            <h1 class="title">quicklist</h1>
-          </div>
-            
-    </header>
-
-    <nav class="container">
-        <div>
-            <a href="#"><i class="hgi hgi-stroke hgi-sharp hgi-arrow-left-02"></i>Voltar</a>
+      <header class="flex gap-16 align-center">
+        <div class="">
+          <img class="logo" src="/assets/logo.png" alt="logo" />
         </div>
         <div>
-            <h1>Compras da semana</h1>
+          <h1 class="title">quicklist</h1>
         </div>
-        
-    </nav>
+      </header>
 
-    <main>
+      <nav class="container">
+        <div>
+          <a href="#"
+            ><i class="hgi hgi-stroke hgi-sharp hgi-arrow-left-02"></i>Voltar</a
+          >
+        </div>
+        <div>
+          <h1>Compras da semana</h1>
+        </div>
+      </nav>
+
+      <main>
         <form class="flex flex-colum gap-16">
-            
-                <input class="label border-input" type="text" placeholder="Adicione um novo item" required>
-                <button type="submit" value="Submit">Adicionar item</button>
-        
-       
+          <input
+            class="label border-input"
+            type="text"
+            placeholder="Adicione um novo item"
+            required
+          />
 
-            <div class="label">
-                <div>
-                    <input type="checkbox">
-                    <span id="content">Pao de forma</span>
-                </div>
-               
-                <div>
-                    <a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>
-                </div>
-                
-            </div>
-            
-    </form>
+          <button type="submit" value="Submit">Adicionar item</button>
+        </form>
 
-    </main>
+        <div class="label">
+          <ul id="content">
+            <li>
+              <input type="checkbox" />
+              <span>Pao de forma</span>
+              <a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>
+            </li>
+          </ul>
 
-
+          <div></div>
+        </div>
+      </main>
     </div>
-   
-</body>
+  </body>
 </html>
-
 
 <script src="script.js"></script>
