@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 :root {
   --bg-color: #f4f5fb;
   --bg-secondary: #ffffff;
@@ -72,6 +73,7 @@ p {
   color: var(--content-secondary);
   font-weight: var(--fw-md);
 }
+
 ul[type="list"] {
   list-style: none;
 }
@@ -90,6 +92,7 @@ button {
 input {
   border: none;
 }
+
 input::before {
   border: none;
 }

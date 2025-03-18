@@ -1,14 +1,25 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const spanContent = document.querySelector("ul");
-const newElement = document.createElement("li");
 
 input.addEventListener("input", () => {
-  const hashcCodeRegex = /[^a-z]+/g;
+  const hashcCodeRegex = /[^a-z ]+/gi;
+  // const hashcCodeRegex = /^(\w+ ?)*$/
+
   input.value = input.value.replace(hashcCodeRegex, "");
 });
 
-newElement.innerHTML =
-  '<input type="checkbox"/><span>teste</span><a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>';
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  const newElement = document.createElement("li");
+  const input = document.createElement("input");
+  input.type = "checkbox";
 
-spanContent.appendChild(newElement);
+  newElement.classList.add("label", "margin-botton");
+  console.log(newElement);
+
+  newElement.appendChild(input);
+
+  // newElement.innerHTML = `<input type="checkbox"/> <span>${input.value}</span><a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>`;
+  spanContent.appendChild(newElement);
+});

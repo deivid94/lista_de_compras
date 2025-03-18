@@ -1,40 +1,41 @@
 .container {
-    width: 90%; 
-    margin: auto ;  
-    justify-items: center;
-
+  width: 90%;
+  margin: auto;
+  justify-items: center;
 }
 .flex {
-    display: flex;
-    
+  display: flex;
 }
 
 .flex-colum {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .flow-cols {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .gap-16 {
-    gap:1rem;
+  gap: 1rem;
 }
 
 .gap-12 {
-    gap:.75rem ;
+  gap: 0.75rem;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .border-input {
-    border: 2px solid var(--content-tertiary);
-    opacity: .5;
-    
+  border: 2px solid var(--content-tertiary);
+  opacity: 0.5;
+}
+
+.margin-botton {
+  margin-bottom: 1rem;
 }
