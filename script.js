@@ -20,6 +20,8 @@ button.addEventListener("click", (e) => {
   console.log(span);
 
   const a = document.createElement("a");
+  a.href = "#";
+  a.innerHTML = `<i class="hgi hgi-stroke hgi-delete-02"></i>`;
 
   newElement.classList.add("label", "margin-botton");
   console.log(newElement);
