@@ -1,12 +1,12 @@
-const input = document.querySelector("input");
+const inputUser = document.querySelector("input");
 const button = document.querySelector("button");
 const spanContent = document.querySelector("ul");
 
-input.addEventListener("input", () => {
+inputUser.addEventListener("input", () => {
   const hashcCodeRegex = /[^a-z ]+/gi;
   // const hashcCodeRegex = /^(\w+ ?)*$/
 
-  input.value = input.value.replace(hashcCodeRegex, "");
+  inputUser.value = inputUser.value.replace(hashcCodeRegex, "");
 });
 
 button.addEventListener("click", (e) => {
@@ -15,10 +15,18 @@ button.addEventListener("click", (e) => {
   const input = document.createElement("input");
   input.type = "checkbox";
 
+  const span = document.createElement("span");
+  span.innerText = `${inputUser.value}`;
+  console.log(span);
+
+  const a = document.createElement("a");
+
   newElement.classList.add("label", "margin-botton");
   console.log(newElement);
 
   newElement.appendChild(input);
+  newElement.appendChild(span);
+  newElement.appendChild(a);
 
   // newElement.innerHTML = `<input type="checkbox"/> <span>${input.value}</span><a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>`;
   spanContent.appendChild(newElement);
