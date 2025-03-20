@@ -1,6 +1,8 @@
 const inputUser = document.querySelector("input");
+
 const button = document.querySelector("button");
 const spanContent = document.querySelector("ul");
+const a = document.querySelector("a");
 
 inputUser.addEventListener("input", () => {
   const hashcCodeRegex = /[^a-z ]+/gi;
@@ -13,18 +15,17 @@ button.addEventListener("click", (e) => {
   e.preventDefault();
   const newElement = document.createElement("li");
   const input = document.createElement("input");
+  const span = document.createElement("span");
+
   input.type = "checkbox";
 
-  const span = document.createElement("span");
   span.innerText = `${inputUser.value}`;
-  console.log(span);
 
   const a = document.createElement("a");
   a.href = "#";
   a.innerHTML = `<i class="hgi hgi-stroke hgi-delete-02"></i>`;
-
+  a.classList.add("delete");
   newElement.classList.add("label", "margin-botton");
-  console.log(newElement);
 
   newElement.appendChild(input);
   newElement.appendChild(span);
@@ -32,4 +33,17 @@ button.addEventListener("click", (e) => {
 
   // newElement.innerHTML = `<input type="checkbox"/> <span>${input.value}</span><a href=""><i class="hgi hgi-stroke hgi-delete-02"></i></a>`;
   spanContent.appendChild(newElement);
+
+  const checkboxList = document.querySelector("input[type=checkbox]");
+  const deleteItemList = (document.getElementsByClassName("delete").onclick = (
+    e
+  ) => {
+    alert("item deletado");
+  }); // resolver deletar item
+
+  checkboxList.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      alert("caixa marcada");
+    }
+  });
 });
