@@ -1,8 +1,6 @@
 const inputUser = document.querySelector("input");
 const button = document.querySelector("button");
 const spanContent = document.querySelector("ul");
-const a = document.querySelector("a");
-const checkboxList = document.querySelector("input[type=checkbox]");
 
 function InputItemListaUsuario() {
   inputUser.addEventListener("input", () => {
@@ -25,7 +23,7 @@ function CriaElementoHtml() {
     const a = document.createElement("a");
     a.href = "#";
     a.innerHTML = `<i class="hgi hgi-stroke hgi-delete-02"></i>`;
-    a.classList.add("delete");
+    a.setAttribute("id", "deleteIcon");
     newElement.classList.add("label", "margin-botton");
 
     newElement.appendChild(input);
@@ -36,10 +34,19 @@ function CriaElementoHtml() {
 }
 
 function DeleteItemList() {
-  const iconDelete = document.querySelector("delete");
-  iconDelete.addEventListener("click", (e) => {
-    alert("ouviu o eevento");
-    spanContent.remove();
+  // Delegação de eventos para deletar e checkbox
+  spanContent.addEventListener("click", (e) => {
+    // Verifica se o clique foi no ícone de deletar
+    if (e.target && e.target.classList.contains("deleteIcon")) {
+      const item = e.target.closest("li"); // Encontra o li mais próximo
+      const checkbox = item.querySelector("input[type=checkbox]");
+
+      if (checkbox.checked) {
+        item.remove(); // Remove o item da lista
+      } else {
+        alert("Você precisa selecionar um item da lista para deletar");
+      }
+    }
   });
 }
 
